@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .background img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            max-width: 600px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffcc00;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #ffaa00;
+        }
+
+        /* Policy Box */
+        .policy {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <img src="your-image-path.jpg" alt="Library Background">
+
+        <div class="overlay">
+            <h1>Library Management System</h1>
+
+            <p>
+                Welcome to our digital library! Manage books, track borrowing, and explore
+                a wide collection of resources easily.
+            </p>
+
+            <a href="login.html" class="btn">Login / Sign Up</a>
+
+            <div class="policy">
+                <h3>Library Policies</h3>
+                <p>
+                    • Books can be borrowed for 14 days<br>
+                    • Late returns may incur fines<br>
+                    • Maintain silence in reading areas<br>
+                    • Handle books with care
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
