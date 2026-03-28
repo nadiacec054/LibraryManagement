@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Register</h2>
+
+        <form onsubmit="return validateForm()" action="login.html">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <input type="file">
+            <input type="submit" value="Register">
+        </form>
+
+    </div>
+</div>
+
+
+
+
+<script>
+function validateForm() {
+    let n = document.getElementById("name").value;
+    let e = document.getElementById("email").value;
+    let p = document.getElementById("password").value;
+
+    if(n=="" || e=="" || p==""){
+        alert("All fields required!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
