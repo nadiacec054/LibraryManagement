@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Library Management System</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <!-- STEP 1: CHOOSE ROLE -->
+        <div id="roleSelection">
+            <h2>Select Login Type</h2>
+
+            <button onclick="showMember()">Member Login</button>
+            <button onclick="showAdmin()">Admin Login</button>
+
+            <br><br>
+
+            <button onclick="goRegister()">New User? Register</button>
+        </div>
+
+        <!-- STEP 2: MEMBER LOGIN -->
+        <div id="memberLogin" style="display:none;">
+            <h2>Member Login</h2>
+
+            <form action="memberHome.jsp">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+
+            <a href="#" onclick="goBack()">← Back</a>
+        </div>
+
+        <!-- STEP 3: ADMIN LOGIN -->
+        <div id="adminLogin" style="display:none;">
+            <h2>Admin Login</h2>
+
+            <form action="adminHome.jsp">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+
+            <a href="#" onclick="goBack()">← Back</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Library System</p>
+</footer>
+
+<script>
+function showMember() {
+    document.getElementById("roleSelection").style.display = "none";
+    document.getElementById("memberLogin").style.display = "block";
+}
+
+function showAdmin() {
+    document.getElementById("roleSelection").style.display = "none";
+    document.getElementById("adminLogin").style.display = "block";
+}
+
+function goBack() {
+    document.getElementById("roleSelection").style.display = "block";
+    document.getElementById("memberLogin").style.display = "none";
+    document.getElementById("adminLogin").style.display = "none";
+}
+
+function goRegister() {
+    window.location.href = "register.html";
+}
+</script>
+
+</body>
+</html>
