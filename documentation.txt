@@ -1,0 +1,6 @@
+so far, the jsp files that were created are member.html, login.html, memberlogin.html and register.html, home.html and adminlogin.html
+
+  an sql table must be created to store all the information about the books, issued and available at the library 
+    all user and admin information, must connect the database with teh front end
+
+create servlets next
